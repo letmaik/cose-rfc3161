@@ -1,4 +1,3 @@
 cryptography
 rfc3161ng
-#cose
-git+https://github.com/letmaik/pycose@95aea755dd3a4765374a4da787c87c25ad4c5494
+pycose

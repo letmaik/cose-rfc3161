@@ -1,12 +1,9 @@
 import urllib.request
 
-from cose.keys import EC2Key
-from cose.messages import Sign1Message
-import cose.headers
+from pycose.keys import EC2Key
+from pycose.messages import Sign1Message
+import pycose.headers
 import rfc3161ng
-
-# Note: This test relies on a patch to pycose.
-# See https://github.com/TimothyClaeys/pycose/pull/83.
 
 COSE_LABEL_TST = 258 # temporary, not allocated yet
 
@@ -67,7 +64,7 @@ def verify_timestamp_in_cose_sign1(sign1_buf: bytes, trusted_tsa_certificate: by
 def test():
     print("Creating COSE_Sign1 message")
     sign1_msg = Sign1Message(
-        phdr={ cose.headers.Algorithm: "ES256" },
+        phdr={ pycose.headers.Algorithm: "ES256" },
         payload="signed message".encode("utf-8")
     )
 
