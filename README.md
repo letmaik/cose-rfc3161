@@ -1,6 +1,6 @@
 # cose-rfc3161
 
-This is a small demo showing how RFC 3161 time-stamping can be used to time-stamp COSE signatures as described at https://github.com/ietf-scitt/draft-birkholz-cose-tsa-tst-header-parameter.
+This is a small demo showing how RFC 3161 time-stamping can be used to time-stamp COSE signatures as described at https://datatracker.ietf.org/doc/draft-birkholz-cose-tsa-tst-header-parameter/.
 
 NOTE: This is not production code! Use at your own risk.
 
